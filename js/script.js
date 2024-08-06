@@ -215,3 +215,5 @@ function toggleDetails(event) {
   const additionalDetails = button.previousElementSibling;
   additionalDetails.style.display = additionalDetails.style.display === 'none' ? 'block' : 'none';
 }
+
+ScrollReveal().reveal('.skills-container', { origin: "bottom" });

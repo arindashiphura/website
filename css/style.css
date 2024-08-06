@@ -505,38 +505,7 @@ span {
     cursor: pointer;
 
 }
-/* .footer{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    flex-wrap: wrap;
-    padding: 2rem 7%;
-    background: var(--main-color);
-}
-.footer-text p{
-    font-size: 1.6rem;
-    color: var(--white-color);
 
-}
-
-.footer-iconTop a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background:var(--white-color);
-    border-radius: .8rem;
-    border: .2rem solid var(--main-color);
-    outline: .2rem solid transparent;
-    transition: .5s ease;
-}
-.footer-iconTop a:hover{
-    outline-color: var(--white-color);
-}
-.footer-iconTop a i{
-    font-size: 2.4rem;
-    color: A#333;
-} */
 .footer {
     display: flex;
     justify-content: center; /* Align footer content to the center */
@@ -901,3 +870,101 @@ span {
     margin-top: 1.5rem; /* Add margin between paragraphs when expanded */
 }
 
+.skills {
+    background-color: var(--bg-color);
+    padding: 3rem 0;
+    margin-bottom: -300px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-box {
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 .1rem 1rem var(--shadow-color);
+    text-align: center;
+    width: 23rem;
+    height:20rem; ;
+}
+
+.skill-box h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skill-box p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+.skill-box p:hover{
+    color: var(--hover-color);
+
+}
+/* Base styling for the skills section */
+.skills {
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-box {
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Styles for the skills section */
+.skills-section {
+    /* Your existing styles for the skills section */
+}
+
+.skill-box h3 {
+    /* Remove margin-bottom */
+    margin-bottom: 0;
+}
+
+
+/* Light mode styling */
+body.light-mode .skill-box {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body .skill-box:hover h3 {
+    color: var(--main-color);
+}
+
+/* Dark mode styling */
+body.dark-mode .skill-box {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode .skill-box:hover h3 {
+    color: var(--main-color);
+}
+
+/* Ensure text color is visible in dark mode */
+body.dark-mode .skill-box p {
+    color: #ddd;
+}
+
+/* Ensure text color is visible in light mode */
+body.light-mode .skill-box p {
+    color: #666;
+}
