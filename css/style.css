@@ -258,6 +258,68 @@ section {
     padding-bottom: 20px;
 }
 
+.home-img {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;    /* Centers the image vertically */
+    width: 100%;            /* Ensures the container takes the full width of the parent */
+    height: auto;           /* Allows height to adjust based on content */
+    padding: 10px;          /* Adds some padding around the image */
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+}
+
+.home-img img {
+    max-width: 100%;       /* Ensures the image does not overflow the container */
+    height: auto;          /* Maintains the aspect ratio */
+    object-fit: cover;     /* Ensures the image covers the container */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home-img {
+        padding: 5px; /* Reduces padding for small screens */
+    }
+    
+    .home-img img {
+        width: 100%; /* Image takes the full width of the container */
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .home-img {
+        padding: 10px;
+    }
+
+    .home-img img {
+        width: 80%; /* Image takes 80% of the container's width */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .home-img {
+        padding: 15px;
+    }
+
+    .home-img img {
+        width: 60%; /* Image takes 60% of the container's width */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) {
+    .home-img {
+        padding: 20px;
+    }
+
+    .home-img img {
+        width: 40%; /* Image takes 40% of the container's width */
+    }
+}
+
 .home .profession i {
     font-size: 3.8rem;
 }
