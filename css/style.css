@@ -484,10 +484,9 @@ span {
 
 }
 
-.contact form .input-box input , .contact form textarea{
+.contact form .input-box input {
     width: 100%;
     padding: 1.5rem;
-    font-size: 1.6rem;
     color:var(--text-color);
     background:var(--bg-color);
     border-radius: .8rem;
@@ -498,8 +497,19 @@ span {
     width: 49%;
 
 }
+
+    
+
 .contact form textarea{
     resize: none;
+    width: 100%;
+    height: 30%;
+    background:var(--bg-color);
+    color:var(--text-color);
+    border-radius: .8rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    
 }
 .contact form .btn{
     margin-top: 2rem;
@@ -874,30 +884,7 @@ span {
 .read-more:hover{
     cursor: pointer;
 }
-/* Header */
-/* .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-} */
 
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-}
 
 .navbar a {
     text-decoration: none;
@@ -966,12 +953,15 @@ span {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    
 }
 
 .skill-box {
     padding: 20px;
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
 }
 /* Styles for the skills section */
 .skills-section {
@@ -988,6 +978,8 @@ span {
 body.light-mode .skill-box {
     background-color: #f4f4f4;
     color: #333;
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
 }
 
 body .skill-box:hover h3 {
@@ -996,8 +988,9 @@ body .skill-box:hover h3 {
 
 /* Dark mode styling */
 body.dark-mode .skill-box {
-    background-color: #333;
+    background-color:  var(--bg-color);
     color: #f4f4f4;
+    border-color:var(--main-color);
 }
 
 body.dark-mode .skill-box:hover h3 {
