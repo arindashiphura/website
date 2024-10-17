@@ -510,6 +510,7 @@ span {
     box-shadow: 0 .1rem .5rem var(--shadow-color);
     font-size: 1.6rem;
     padding: 0.5rem;
+    background:var(--bg-color);
     
 }
 .contact form .btn{
